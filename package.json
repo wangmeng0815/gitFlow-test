@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangmeng0815/gitFlow-test.git"
+  },
+  "config":{
+    "commitizen": {
+      "path": "git-cz"
+    } 
   },
   "author": "",
   "license": "ISC",
