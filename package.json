@@ -11,15 +11,19 @@
     "type": "git",
     "url": "git+https://github.com/wangmeng0815/gitFlow-test.git"
   },
-  "config":{
+  "config": {
     "commitizen": {
       "path": "git-cz"
-    } 
+    }
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wangmeng0815/gitFlow-test/issues"
   },
-  "homepage": "https://github.com/wangmeng0815/gitFlow-test#readme"
+  "homepage": "https://github.com/wangmeng0815/gitFlow-test#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^4.2.5"
+  }
 }
