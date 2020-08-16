@@ -5,11 +5,13 @@
         "es2020": true,
         "node": true
     },
-    // "extends": "eslint:recommended",
     "extends": ["airbnb-base", "plugin:prettier/recommended"],
     "parserOptions": {
         "ecmaVersion": 11
     },
     "rules": {
+        "no-plusplus": "off",
+        "consistent-return": "off",  // Arrow function expected no return value
+        "radix": "off"
     }
 }

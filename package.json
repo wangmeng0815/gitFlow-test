@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "eslint": "eslint --ignore-path .eslintignore --fix --ext .js src"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,22 @@
       "path": "git-cz"
     }
   },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --ignore-path .eslintignore --quiet --fix --ext .js",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "singleQuote": true
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -24,10 +41,13 @@
   "homepage": "https://github.com/wangmeng0815/gitFlow-test#readme",
   "dependencies": {},
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.9.0",
-    "@typescript-eslint/parser": "^3.9.0",
     "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "husky": "^4.2.5"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
   }
 }
