@@ -24,6 +24,10 @@
   "homepage": "https://github.com/wangmeng0815/gitFlow-test#readme",
   "dependencies": {},
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "husky": "^4.2.5"
   }
 }

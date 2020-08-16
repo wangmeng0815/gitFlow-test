@@ -15,11 +15,11 @@ trim_trailing_whitespace = true
 
 # space 缩进
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
 
 [*.yml]
 indent_style = space
-indent_size = 2
+indent_size = 4
